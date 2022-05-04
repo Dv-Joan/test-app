@@ -1,32 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import Spinner from './Spinner';
 
 function UseEffect() {
-  //Prueba de UseEffect
-  useEffect(() => {
-    console.log('Use Effect está corriendo');
-  }, []);
-
-  const [color, setColor] = useState(null);
-
-  //Cambiar color a un DiV con UseEffect
-  useEffect(() => {
-    function onColorChange(evento) {
-      if (evento.clientX > window.innerWidth / 2) {
-        setColor('purple');
-      } else {
-        setColor('violet');
-      }
-    }
-    window.addEventListener('mousemove', onColorChange);
-  }, []);
-
+  const spinnerValue = 1;
   return (
-    <div className='font-bold-underline bg-red-500 rounded-xl mx-5 my-3 px-5 py-3 '>
-      Desde el componente useEffect
-      <div
-        className=' flex-auto w-60 h-14 items-center rounded-lg  mx-5 my-3 drop-shadow-lg '
-        style={{ background: color }}
-      ></div>
+    <div className=' text-4xl font-bold tracking-wide font-Roboto font-bold-underline bg-gradient-to-r from-orange-400 to-orange-300 rounded-xl mx-5 my-5 px-10 py-7   '>
+      Aplicando Use Effect
+      <div className=' grid grid-flow-col  mt-5'>
+        <Spinner />
+      </div>
     </div>
   );
 }

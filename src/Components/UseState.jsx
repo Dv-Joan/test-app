@@ -9,14 +9,15 @@ function UseState() {
   return (
     <div className='font-bold-underline bg-red-500 rounded-xl mx-5 my-3 px-5 py-3 '>
       Desde el componente useState
-      <p className='text-black font-bold-underline py-2'>
-        Usted tiene <strong className='text-green'>${cuenta}</strong> dólares en
+      <p className='text-white font-mono font-bold text-xl py-2 '>
+        Usted tiene{' '}
+        <strong className='text-green-300 text-xl'>${cuenta}</strong> dólares en
         su cuenta <br></br>
         Texto: {texto}
       </p>
       <button
         className='
-        rounded-full  px-10 py-3 mx-5 my-3 bg-slate-800 drop-shadow-lg hover:bg-slate-700 active:bg-slate-400 focus:outline-none focus:ring focus:ring-slate-300'
+        rounded-full  px-10 py-3 mx-5 my-3 bg-slate-800 drop-shadow-lg hover:bg-slate-700 active:bg-slate-400 focus:outline-none focus:ring focus:ring-slate-300 '
         onClick={aplicarState}
       >
         Get Money
