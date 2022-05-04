@@ -7,9 +7,11 @@ function UseState() {
     setTexto('Soy otro texto');
   };
   return (
-    <div className=' mx-5 my-3'>
-      <p className='text-black font-bold-underline'>
-        Usted tiene {cuenta} dólares en su cuenta <br></br>
+    <div className='font-bold-underline bg-red-500 rounded-xl mx-5 my-3 px-5 py-3 '>
+      Desde el componente useState
+      <p className='text-black font-bold-underline py-2'>
+        Usted tiene <strong className='text-green'>${cuenta}</strong> dólares en
+        su cuenta <br></br>
         Texto: {texto}
       </p>
       <button

@@ -17,12 +17,14 @@ function FetchAPI() {
 
   return (
     <div>
-      <h2>
-        <strong>Lista de Usuarios</strong>
-      </h2>
-      {state.map((user) => (
-        <li key={user.id}>{user.name}</li>
-      ))}
+      <h1 className='text-3xl pl-5 py-2 leading-relaxed'>
+        <strong>Lista de Usuarios (Using Fetch)</strong>
+      </h1>
+      <h3 className='text-2xl font-Roboto tracking-wider pl-5'>
+        {state.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </h3>
     </div>
   );
 }
