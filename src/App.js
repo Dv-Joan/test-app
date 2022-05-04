@@ -5,7 +5,7 @@ import FetchAPI from './Components/FetchAPI';
 function App() {
 
   return (
-    <div className="text-3xl font-mono font-bold bg-purple-600  text-white py-5 px-5 ">
+    <div className="text-3xl font-mono font-bold bg-purple-600  text-white py-5 px-7 ">
       Desde el componente principal APP
     <UseEffect />
     <UseState />
