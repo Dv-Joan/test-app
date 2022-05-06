@@ -8,10 +8,10 @@ function App() {
 
   return (
     <React.Fragment >
-    <div className="text-5xl text-center  font-mono font-bold bg-gradient-to-r from-blue-600 to-cyan-400  text-white py-10 px-7 ">
-      Learning <strong className="text-orange-500 italic tracking-tight">REACT | TailWind</strong> BASICS 
+    <div className="text-5xl text-center  font-mono font-bold py-10 px-7 " style={{background : "#F4F3F8" , color: "#201C31"}}>
+      REACT | TailWind BASICS 
     </div>
-    <div className="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-1  px-11 ">
+    <div className=" text-white py-1  px-11 " style={{background : "#F4F3F8" , color : "#201C31"}}>
     <UseEffect />
     <UseState />
     <FetchAPI />

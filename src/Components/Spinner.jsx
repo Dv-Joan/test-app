@@ -7,9 +7,9 @@ function Spinner() {
   useEffect(() => {
     function onColorChange(evento) {
       if (evento.clientX > window.innerWidth / 2) {
-        setColor('purple');
+        setColor('#FCC050');
       } else {
-        setColor('violet');
+        setColor('orange');
       }
     }
     window.addEventListener('mousemove', onColorChange);

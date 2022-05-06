@@ -7,7 +7,10 @@ function UseState() {
     setTexto('Soy otro texto');
   };
   return (
-    <div className='font-bold-underline bg-red-500 rounded-xl mx-5 my-3 px-5 py-3 '>
+    <div
+      className='font-Roboto text-4xl font-bold  rounded-xl  mx-5 my-5 px-10 py-7'
+      style={{ background: '#2A2C41', color: '#F4F3F8' }}
+    >
       Desde el componente useState
       <p className='text-white font-mono font-bold text-xl py-2 '>
         Usted tiene{' '}
@@ -17,7 +20,8 @@ function UseState() {
       </p>
       <button
         className='
-        rounded-full  px-10 py-3 mx-5 my-3 bg-slate-800 drop-shadow-lg hover:bg-slate-700 active:bg-slate-400 focus:outline-none focus:ring focus:ring-slate-300 '
+        rounded-full  px-10 py-3 mx-5 my-3 drop-shadow-lg hover:bg-slate-700 active:bg-slate-400 focus:outline-none focus:ring focus:ring-slate-300 '
+        style={{ background: '##FF724C' }}
         onClick={aplicarState}
       >
         Get Money
