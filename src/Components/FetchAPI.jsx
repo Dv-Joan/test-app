@@ -16,15 +16,18 @@ function FetchAPI() {
   // Reto : intentar mostrar "users" con un boton, utilizando useState
 
   return (
-    <div className='text-4xl font-bold tracking-wide font-Roboto font-bold-underline bg-red-500 rounded-xl mx-5 my-3 px-5 py-5 '>
-      <h1 className='text-3xl py-2 leading-relaxed pl-10'>
-        <strong>Lista de Usuarios (Using Fetch)</strong>
-      </h1>
-      <h3 className='text-2xl font-Roboto tracking-wider pl-12'>
+    <div
+      className=' rounded-xl  mx-5 my-5 px-10 py-7 font-Roboto font-bold tracking-wider'
+      style={{ background: '#2A2C41', color: '#F4F3F8' }}
+    >
+      <span className=' text-4xl font-bold tracking-wide font-Roboto my-2'>
+        Lista de Usuarios (Using Fetch)
+      </span>
+      <p className='text-2xl font-Roboto tracking-wider pl-12'>
         {state.map((user) => (
           <li key={user.id}>{user.name}</li>
         ))}
-      </h3>
+      </p>
     </div>
   );
 }
