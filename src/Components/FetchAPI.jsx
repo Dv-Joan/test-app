@@ -17,17 +17,40 @@ function FetchAPI() {
 
   return (
     <div
-      className=' rounded-xl  mx-5 my-5 px-10 py-7 font-Roboto font-bold tracking-wider'
+      className=' rounded-xl  mx-5 my-5 px-10 py-7 '
       style={{ background: '#2A2C41', color: '#F4F3F8' }}
     >
-      <span className=' text-4xl font-bold tracking-wide font-Roboto my-2'>
-        Lista de Usuarios (Using Fetch)
+      <span className=' text-4xl font-bold tracking-wide font-Roboto'>
+        Consumiendo la API de{' '}
+        <span className='text-yellow-400'>JsonPlaceHolder</span>
       </span>
-      <p className='text-2xl font-Roboto tracking-wider pl-12'>
-        {state.map((user) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-      </p>
+      <div className=' pt-7'>
+        <table className='table-fixed font-Roboto tracking-wider'>
+          <thead>
+            <tr className='text-center  text-xl text-slate-700 '>
+              <th className='w-64 bg-slate-300 rounded-l'>Name</th>
+              <th className='w-64 bg-slate-400 '>Username</th>
+              <th className='w-64 bg-slate-500 rounded-r'>Email</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {state.map((user) => (
+              <tr key={user.id}>
+                <div className='px-7 border-2 border-dotted rounded-l border-slate-600'>
+                  {user.name}
+                </div>
+                <td className='px-12 border-2 border-dotted border-slate-600'>
+                  {user.username}
+                </td>
+                <div className='px-10 border-2 border-dotted rounded-r border-slate-600'>
+                  {user.email}
+                </div>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

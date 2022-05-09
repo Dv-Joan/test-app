@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 function UseState() {
-  const [cuenta, setCuenta] = useState(100);
-  const [texto, setTexto] = useState('Soy el primer texto');
+  const [cuenta, setCuenta] = useState(0);
+  const [texto, setTexto] = useState('Estoy sin dinero');
   const aplicarState = () => {
-    setCuenta(cuenta + 10);
-    setTexto('Soy otro texto');
+    setCuenta(cuenta + 100);
+    setTexto('Ahora tengo dinero');
   };
   return (
     <div
@@ -12,17 +12,19 @@ function UseState() {
       style={{ background: '#2A2C41', color: '#F4F3F8' }}
     >
       <span className=' text-4xl font-bold tracking-wide font-Roboto'>
-        Desde el componente useState
+        Aplicando UseState
       </span>
 
-      <p className='text-white font-Roboto  tracking-wider text-xl py-3 px-2'>
-        Tienes <strong className='text-green-300 text-xl'>{cuenta}$</strong>{' '}
-        dólares en tu cuenta <br></br>
-        <span className='font-bold'>Texto : </span>
-        {texto}
-      </p>
+      <div className='border-dashed border-2 border-violet-600 rounded-xl py-2 px-2 my-2'>
+        <p className='text-white font-Roboto  tracking-wider text-xl py-4 px-2'>
+          Tienes <strong className='text-green-300 text-xl'>{cuenta}$</strong>{' '}
+          dólares en tu cuenta <br></br>
+          <span className='font-bold'>POV : </span>
+          <span className='italic'>" {texto} " </span>
+        </p>
+      </div>
       <button
-        className=' bg-orange-500 flex-auto w-40 h-14 items-center text-center rounded-full  mx-5 my-3 drop-shadow-lg py-2.5 text-2xl cursor-pointer'
+        className=' bg-slate-800 border-solid border-2 border-white py-2 px-5 mt-4 items-center text-center rounded-full drop-shadow-lg  text-xl cursor-pointer hover:bg-white hover:text-slate-800 active:bg-violet-600 '
         onClick={aplicarState}
       >
         Get Money

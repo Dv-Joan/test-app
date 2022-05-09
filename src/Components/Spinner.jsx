@@ -7,9 +7,9 @@ function Spinner() {
   useEffect(() => {
     function onColorChange(evento) {
       if (evento.clientX > window.innerWidth / 2) {
-        setColor('violet');
+        setColor('orange');
       } else {
-        setColor('white');
+        setColor('violet');
       }
     }
     window.addEventListener('mousemove', onColorChange);
@@ -17,28 +17,28 @@ function Spinner() {
   return (
     <div className='grid grid-flow-col  mt-5'>
       <div
-        className=' hover:animate-ping flex-auto w-40 h-14 items-center text-center rounded-full  mx-5 my-3 drop-shadow-lg py-2.5 text-2xl cursor-pointer text-black '
+        className=' hover:animate-ping flex-auto w-40 h-14 items-center text-center rounded-full  mx-5 my-3 drop-shadow-lg py-2.5 text-2xl cursor-pointer  '
         style={{ background: color }}
       >
-        Latency
+        Latency⌛
       </div>
       <div
         className=' hover:animate-spin flex-auto w-40 h-14 items-center text-center rounded-full  mx-5 my-3 drop-shadow-lg py-2.5 text-2xl cursor-pointer '
         style={{ background: color }}
       >
-        Spinner
+        Spinner 🥝
       </div>
       <div
         className=' hover:animate-bounce flex-auto w-40 h-14 items-center text-center rounded-full  mx-5 my-3 drop-shadow-lg py-2.5 text-2xl cursor-pointer '
         style={{ background: color }}
       >
-        Bounce
+        Bounce ✨
       </div>
       <div
         className=' hover:animate-pulse flex-auto w-40 h-14 items-center text-center rounded-full  mx-5 my-3 drop-shadow-lg py-2.5 text-2xl cursor-pointer '
         style={{ background: color }}
       >
-        Pulse
+        Pulse 💥
       </div>
     </div>
   );
