@@ -20,10 +20,12 @@ function FetchAPI() {
       className=' rounded-xl  mx-5 my-5 px-10 py-7 '
       style={{ background: '#2A2C41', color: '#F4F3F8' }}
     >
-      <span className=' text-4xl font-bold tracking-wide font-Roboto'>
-        Consumiendo la API de{' '}
-        <span className='text-yellow-400'>JsonPlaceHolder</span>
-      </span>
+      <div className=' text-4xl font-bold tracking-wide font-Roboto flex'>
+        PlaceHolder
+        <div className=' text-slate-700 mx-3 text-xl h-7 mt-1.5 bg-yellow-300 px-1 rounded'>
+          API
+        </div>
+      </div>
       <div className=' pt-7'>
         <table className='table-fixed font-Roboto tracking-wider'>
           <thead>
