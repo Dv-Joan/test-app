@@ -22,7 +22,7 @@ function FetchAPI() {
     >
       <div className=' text-4xl font-bold tracking-wide font-Roboto flex'>
         PlaceHolder
-        <div className=' text-slate-700 mx-3 text-xl h-7 mt-1.5 bg-yellow-300 px-1 rounded'>
+        <div className=' text-white mx-3 text-xl h-7 mt-1.5 bg-violet-600 px-2 rounded'>
           API
         </div>
       </div>
